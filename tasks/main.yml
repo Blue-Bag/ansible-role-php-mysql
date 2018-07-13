@@ -14,7 +14,7 @@
 - name: Define php_mysql_package (PHP 7.x).
   set_fact:
     php_mysql_package: "{{ __php_mysql_package7 }}"
-  when: php_mysql_package is not defined and php_version == 7
+  when: php_mysql_package is not defined and php_version > 7
 
 # Installation.
 - name: Install PHP MySQL dependencies (RedHat).
