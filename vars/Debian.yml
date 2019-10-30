@@ -1,0 +1,4 @@
+---
+__php_mysql_package5: php5-mysql
+
+__php_mysql_package7: php{{ php_version }}-mysql
